@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Главная :: Блог</title>
+    </head>
+    <body>
+        <h1>Объявления</h1>
+        {% for table in tables %}
+        <div>
+            <h2>{{ table.name}}</h2>
+            <p>{{ table.contant }}</p>
+            <p>{{ table.datep|date:"d.m.Y" }}</p>
+        </div>
+        {% endfor %}
+    </body>
+</html> 
